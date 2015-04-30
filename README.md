@@ -11,4 +11,4 @@ $ cd tolkienIpsum
 $ ./manage.py runserver
 ~~~
 
-Then go to `http://localhost:8000/generator/10/5/15' in a browser and check it out!
+Then go to `http://localhost:8000/generator/10/5/15` in a browser and check it out!
