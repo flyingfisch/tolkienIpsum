@@ -123,8 +123,8 @@ TolkienDict = {
 }
 
 TolkienSentenceFormats = [
-    'In {largeNumber}, a {thing} {verbPast}.',
-    'In {place}, a {thing} {verbPast}.',
+    'A {thing} {verbPast}.',
+    'In {place}, a {thing} was {verbPast}.',
     '"{exclamation}!", cried {person}, "{speciesPlural}!"',
     '{person} {verbPast} the {thing}.',
     '{medNumber} {speciesPlural} came over the {thing}.',
@@ -139,6 +139,8 @@ TolkienSentenceFormats = [
     'The attack failed, forcing the {speciesPlural} to retreat to {place}.',
     '{person} insisted on attacking {place}, but the {speciesPlural} were waiting.',
     '{person} attacked {place}, and slaughtered the {speciesPlural} in a surprise attack.',
-    '{person} was found full of {thing}',
+    '{person} was found full of arrows.',
+    'The {speciesPlural} ambushed {person} at {place}.',
+    'The {speciesPlural} were ravaging the countryside, leaving destruction in their wake.',
 ]
 
