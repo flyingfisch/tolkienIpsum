@@ -24,7 +24,7 @@ def GenerateParagraph(sentences = 5):
 
     return paragraph
 
-def GenerateIpsum(paragraphs = 3, sentenceMax = 10, sentenceMin = 5):
+def GenerateIpsum(paragraphs = 3, sentenceMin = 5, sentenceMax = 15):
     ipsum = ''
 
     for i in range(0, paragraphs):

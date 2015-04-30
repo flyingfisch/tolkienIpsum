@@ -83,7 +83,6 @@ TolkienDict = {
         'sounded',
     ],
     'exclamation': [
-        'Look',
         'Listen',
         'Quick',
     ],
@@ -96,7 +95,9 @@ TolkienSentenceFormats = [
     'Meanwhile, {person} {verbPast} the {thing}.',
     '{medNumber} {speciesPlural} came over the {thing}.',
     'The {speciesPlural} hurried to {place}.',
-    '{smallNumber} {thing}s {verbPast}.',
-    '{smallNumber} {speciesPlural} joined to {verbPresent} the {thing}.'
+    '{smallNumber} {thing} were {verbPast}.',
+    '{smallNumber} {speciesPlural} joined to {verbPresent} the {thing}.',
+    'The {speciesPlural} rallied around the {thing}.',
+    '{person} felt he did not have the strenght to move.',
 ]
 
