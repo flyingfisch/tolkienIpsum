@@ -1,8 +1,14 @@
 import random
 from .data import *
 
+# Creates a sentence from a sentence format with placeholders filled with random words. Also adds a connector like "meanwhile" to the beginning occasionally
 def GenerateSentence(dict = TolkienDict, sentenceFormats = TolkienSentenceFormats):
-    return random.choice(sentenceFormats).format(
+    connector = ''
+
+    if random.randint(0,10) == 1:
+        connector = random.choice(['Meanwhile, ', 'In the meantime, ', 'While this was happening, '])
+
+    return connector + random.choice(sentenceFormats).format(
         largeNumber = random.randint(100, 10000),
         medNumber = random.randint(10, 100),
         smallNumber = random.randint(2, 10),
