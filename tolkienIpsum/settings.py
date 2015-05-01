@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     # Local Apps
+    'home',
     'generator',
 )
 
@@ -59,7 +60,9 @@ ROOT_URLCONF = 'tolkienIpsum.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            './tolkienIpsum/templates/'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
