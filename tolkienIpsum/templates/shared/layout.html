@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load staticfiles %}
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} - Tolkien Ipsum</title>
-    <link rel="stylesheet" href="/static/site.css">
+    <link rel="stylesheet" href="{% static "/static/shared/site.css" %}">
 </head>
 <body>
     <header>
