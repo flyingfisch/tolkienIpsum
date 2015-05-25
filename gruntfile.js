@@ -12,9 +12,20 @@ module.exports = function(grunt) {
                 }
             }
         },
+        cssmin: {
+            options: {
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'static/tolkienIpsum/css/site.min.css': 'static/tolkienIpsum/css/site.css'
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass', 'cssmin']);
 }
