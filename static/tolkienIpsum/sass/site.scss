@@ -9,3 +9,7 @@ html, body {
     height: 100%;
 }
 
+html {
+    background-image: url(/static/shared/images/hobbits.jpg);
+    background-size: cover;
+}

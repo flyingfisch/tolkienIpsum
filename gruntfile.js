@@ -21,11 +21,18 @@ module.exports = function(grunt) {
                     'static/tolkienIpsum/css/site.min.css': 'static/tolkienIpsum/css/site.css'
                 }
             }
+        },
+        watch: {
+            scripts: {
+                files: ['**/*'],
+                tasks: ['default']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass', 'cssmin']);
 }
