@@ -12,4 +12,37 @@ html, body {
 html {
     background-image: url(/static/shared/images/hobbits.jpg);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Cardo', serif;
+    font-size: 16px;
 }
+
+h1, h2, h3 {
+    font-variant: small-caps;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-variant: small-caps;
+}
+
+
+header {
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+    }
+
+    &:after {
+        border-bottom: 2px solid #fff;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+    }
+}
+

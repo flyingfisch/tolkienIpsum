@@ -3,12 +3,17 @@
 <head>
     {% load staticfiles %}
     <meta charset="UTF-8">
+
     <title>{% block title %}{% endblock %} - Tolkien Ipsum</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static "/static/shared/css/normalize.css" %}">
     <link rel="stylesheet" href="{% static "/static/shared/css/site.css" %}">
 </head>
 <body>
     <header>
         <h1>Tolkien Ipsum</h1>
+        <h2>A Lord of the Rings greeking generator</h2>
     </header>
     <article>
         {% block content %}{% endblock %}
