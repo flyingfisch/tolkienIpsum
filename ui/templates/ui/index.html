@@ -4,7 +4,17 @@
 
 {% block content %}
     <form action="">
-        <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" type="number">
+        <p>
+            <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" type="number">
+        </p>
+
+        <p>
+            <label for="min_sentences">Min sentences per paragraph</label><input id="min_sentences" name="min_sentences" type="number">
+        </p>
+
+        <p>
+            <label for="max_sentences">Max sentences per paragraph</label><input id="max_sentences" name="max_sentences" type="number">
+        </p>
     </form>
 {% endblock %}
 
