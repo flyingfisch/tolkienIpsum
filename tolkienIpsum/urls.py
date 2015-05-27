@@ -7,6 +7,5 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^', include('ui.urls')),
-    url(r'^generator/', include('generator.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

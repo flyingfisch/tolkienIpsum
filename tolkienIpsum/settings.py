@@ -40,7 +40,6 @@ INSTALLED_APPS = (
 
     # Local Apps
     'ui',
-    'generator',
 )
 
 MIDDLEWARE_CLASSES = (

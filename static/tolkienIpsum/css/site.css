@@ -25,16 +25,24 @@ h1, h2, h3 {
 header, article, footer {
   text-align: center; }
 
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3em; }
+
+article {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 0 9px #000;
+  color: #000;
+  margin: 2em 0;
+  padding: 2em; }
+
 header:after, article:after {
   border-bottom: 2px solid #fff;
   content: "";
   display: block;
   margin: 0 auto;
   width: 20%; }
-
-header h1 {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 3em; }
 
 footer {
   padding: 3em 0;
@@ -44,13 +52,7 @@ a {
   color: #fff; }
 
 form {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 0 9px #000;
-  color: #000;
   display: table;
-  margin: 2em 0;
-  padding: 2em;
   width: 100%; }
   form p {
     display: table-row; }

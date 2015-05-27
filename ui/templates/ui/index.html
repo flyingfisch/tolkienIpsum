@@ -3,17 +3,17 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <form action="">
+    <form action="{% url 'generate' %}">
         <p>
-            <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" type="number">
+            <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" value="1" type="number">
         </p>
 
         <p>
-            <label for="min_sentences">Min sentences per paragraph</label><input id="min_sentences" name="min_sentences" type="number">
+            <label for="min_sentences">Min sentences per paragraph</label><input id="min_sentences" name="min_sentences" value="3" type="number">
         </p>
 
         <p>
-            <label for="max_sentences">Max sentences per paragraph</label><input id="max_sentences" name="max_sentences" type="number">
+            <label for="max_sentences">Max sentences per paragraph</label><input id="max_sentences" name="max_sentences" value="7" type="number">
         </p>
 
         <button type="submit">Generate</button>

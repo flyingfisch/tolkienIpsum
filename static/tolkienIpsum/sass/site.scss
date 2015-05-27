@@ -32,6 +32,22 @@ header, article, footer {
     text-align: center;
 }
 
+header {
+    h1 {
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 3em;
+    }
+}
+
+article {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 9px #000;
+    color: #000;
+    margin: 2em 0;
+    padding: 2em;
+}
+
 header, article {
     &:after {
         border-bottom: 2px solid #fff;
@@ -39,13 +55,6 @@ header, article {
         display: block;
         margin: 0 auto;
         width: 20%;
-    }
-}
-
-header {
-    h1 {
-        font-family: 'Cinzel Decorative', cursive;
-        font-size: 3em;
     }
 }
 
@@ -59,13 +68,7 @@ a {
 }
 
 form {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 0 9px #000;
-    color: #000;
     display: table;
-    margin: 2em 0;
-    padding: 2em;
     width: 100%;
 
     p {

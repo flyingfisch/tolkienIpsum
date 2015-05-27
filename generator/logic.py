@@ -32,6 +32,9 @@ def GenerateParagraph(sentences = 5):
 
 def GenerateIpsum(paragraphs = 3, sentenceMin = 5, sentenceMax = 15):
     ipsum = ''
+    paragraphs = int(paragraphs)
+    sentenceMin = int(sentenceMin)
+    sentenceMax = int(sentenceMax)
 
     for i in range(0, paragraphs):
         ipsum += '<p>' + GenerateParagraph(random.randint(sentenceMin, sentenceMax)) + '</p>'
