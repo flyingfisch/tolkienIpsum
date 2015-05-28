@@ -3,9 +3,21 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+    <section id="about">
+        <h1>About</h1>
+
+        <p>
+            This is a Lord of the Rings themed <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">lipsum</a> generator. You can customize the number of paragraphs generated, the minimum number of sentences per paragraph, and the maximum number of sentences per paragraph. I plan to make it generate <a href="https://en.wikipedia.org/wiki/Elvish_languages_%28Middle-earth%29">Elvish</a> in the future.
+        </p>
+
+        <p>
+            You can find the source code on <a href="https://github.com/flyingfisch/tolkienIpsum">GitHub</a>, and if you have any issues please file them through the <a href="https://github.com/flyingfisch/tolkienIpsum/issues">GitHub issue tracker</a>.
+        </p>
+    </section>
+
     <form action="{% url 'generate' %}">
         <p>
-            <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" value="1" type="number">
+            <label for="paragraphs">Paragraphs</label><input id="paragraphs" name="paragraphs" value="3" type="number">
         </p>
 
         <p>
@@ -16,7 +28,7 @@
             <label for="max_sentences">Max sentences per paragraph</label><input id="max_sentences" name="max_sentences" value="7" type="number">
         </p>
 
-        <button type="submit">Generate</button>
+        <div><button type="submit">Generate</button></div>
     </form>
 {% endblock %}
 

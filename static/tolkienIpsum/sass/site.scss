@@ -22,6 +22,10 @@ html {
 body {
     width: 40%;
     margin: 0 auto;
+
+    @media (max-width: 880px) {
+        width: 98%;
+    }
 }
 
 h1, h2, h3 {
@@ -48,14 +52,16 @@ article {
     padding: 2em;
 }
 
-header, article {
-    &:after {
-        border-bottom: 2px solid #fff;
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 20%;
-    }
+header:after, section:after {
+    border-bottom: 2px solid #fff;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+section:after {
+    border-color: #000;
 }
 
 footer {
@@ -64,32 +70,50 @@ footer {
 }
 
 a {
-    color: #fff;
+    color: inherit;
 }
 
 form {
-    display: table;
     width: 100%;
-
-    p {
-        display: table-row;
-    }
 }
 
 label, input {
-    display: table-cell;
     padding: 1em;
 }
 
 label {
+    display: block;
     font-weight: bold;
 }
 
-input {
+input, button {
     font-family: inherit;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    background: none;
 }
 
 input[type='number'] {
-    border: 2px solid #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    background: none;
     padding: .3em;
+    text-align: center;
+}
+
+button {
+    background: #eeeeec;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    margin-top: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+    text-align: left;
+    font-family: monospace;
 }

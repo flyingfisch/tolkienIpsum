@@ -36,8 +36,11 @@ def GenerateIpsum(paragraphs = 3, sentenceMin = 5, sentenceMax = 15):
     sentenceMin = int(sentenceMin)
     sentenceMax = int(sentenceMax)
 
+    if sentenceMax < sentenceMin:
+        sentenceMax = sentenceMin + 1
+
     for i in range(0, paragraphs):
-        ipsum += '<p>' + GenerateParagraph(random.randint(sentenceMin, sentenceMax)) + '</p>'
+        ipsum += '<p>' + GenerateParagraph(random.randint(sentenceMin, sentenceMax)) + "</p>\r\n"
 
     return ipsum
 

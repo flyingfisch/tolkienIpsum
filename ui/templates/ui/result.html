@@ -3,7 +3,12 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+    <h1>Preview</h1>
+
     {% autoescape off %}
         {{ ipsum }}
     {% endautoescape %}
+
+    <h1>Markup</h1>
+    <pre>{{ ipsum }}</pre>
 {% endblock %}
