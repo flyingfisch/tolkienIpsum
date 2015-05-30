@@ -4,6 +4,7 @@ TolkienDict = {
     'thing': [
         'the fellowship of the ring',
         'last alliance of Elves and Men',
+        'eagle',
         'broken sword',
         'tower',
         'mountain',
@@ -25,6 +26,7 @@ TolkienDict = {
         'balrog',
         'troll',
         'Lembas bread',
+        'Nazgul',
     ],
     'speciesSingular': [
         'Elf',
@@ -33,7 +35,6 @@ TolkienDict = {
         'Orc',
         'Ent',
         'Hobbit',
-        'Nazgul',
     ],
     'speciesPlural': [
         'Elves',
