@@ -27,6 +27,7 @@ TolkienDict = {
         'troll',
         'Lembas bread',
         'Nazgul',
+        'Palantir',
     ],
     'speciesSingular': [
         'Elf',
@@ -35,6 +36,8 @@ TolkienDict = {
         'Orc',
         'Ent',
         'Hobbit',
+        'Dragon',
+        'Balrog',
     ],
     'speciesPlural': [
         'Elves',
@@ -44,6 +47,8 @@ TolkienDict = {
         'Ents',
         'Hobbits',
         'Nazgul',
+        'Dragons',
+        'Balrogs',
     ],
     'place': [
         'Mordor',
@@ -67,6 +72,7 @@ TolkienDict = {
         'Minas Ithil',
         'Minas Morgul',
         'Rivendell',
+        'Gondolin',
     ],
     'person': [
         'Theoden',
@@ -96,6 +102,12 @@ TolkienDict = {
         'Grima Wormtongue',
         'Smaug',
         'Shelob',
+        'Turgon',
+        'Ecthelion',
+        'Glorfindel',
+        'Tuor',
+        'Beren',
+        'Luthien',
     ],
     'verbPresent': [
         'sing',
@@ -107,6 +119,7 @@ TolkienDict = {
         'forge',
         'climb',
         'attack',
+        'fly',
     ],
     'verbPast': [
         'formed',
@@ -116,10 +129,12 @@ TolkienDict = {
         'forged',
         'sounded',
         'slaughtered',
+        'flew',
     ],
     'exclamation': [
         'Listen',
         'Quick',
+        'Watch out',
     ],
 }
 
